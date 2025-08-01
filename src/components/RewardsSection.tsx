@@ -10,22 +10,22 @@ export const RewardsSection = () => {
       name: "Golden Stars",
       description: "Earn by scoring points",
       amount: "847",
-      rarity: "Common"
+      rarity: "Common",
     },
     {
       icon: <Heart className="w-8 h-8 text-red-500" />,
       name: "Extra Lives",
       description: "Continue your streak",
       amount: "12",
-      rarity: "Uncommon"
+      rarity: "Uncommon",
     },
     {
       icon: <Zap className="w-8 h-8 text-blue-500" />,
       name: "Power Boosts",
       description: "Special abilities",
       amount: "5",
-      rarity: "Rare"
-    }
+      rarity: "Rare",
+    },
   ];
 
   return (
@@ -36,7 +36,8 @@ export const RewardsSection = () => {
             Magical Rewards 🎁
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Open mystery lootboxes and collect amazing rewards! The more you play, the better treasures you'll find!
+            Open mystery lootboxes and collect amazing rewards! The more you
+            play, the better treasures you'll find!
           </p>
         </div>
 
@@ -45,32 +46,33 @@ export const RewardsSection = () => {
           <div className="text-center space-y-6">
             <Card className="panel-game">
               <div className="relative">
-                <img 
-                  src={lootboxImage} 
-                  alt="Mystery Lootbox" 
+                <img
+                  src={lootboxImage}
+                  alt="Mystery Lootbox"
                   className="w-full max-w-sm mx-auto rounded-2xl pulse-glow"
                 />
                 <div className="absolute -top-2 -right-2 w-16 h-16 bg-secondary rounded-full flex items-center justify-center border-4 border-white font-black text-2xl float-bounce">
                   ✨
                 </div>
               </div>
-              
+
               <div className="space-y-4 mt-6">
                 <h3 className="text-2xl font-game font-bold text-primary">
                   Mystery Lootbox Available!
                 </h3>
                 <p className="text-muted-foreground">
-                  You've earned enough stars to open a magical treasure box! 
+                  You've earned enough stars to open a magical treasure box!
                   What amazing rewards await inside?
                 </p>
-                
+
                 <Button size="lg" className="btn-primary-game w-full">
                   <Gift className="w-5 h-5 mr-2" />
                   Open Lootbox (100 ⭐)
                 </Button>
-                
+
                 <div className="text-sm text-muted-foreground">
-                  Next lootbox in: <span className="font-bold text-secondary">245 ⭐</span>
+                  Next lootbox in:{" "}
+                  <span className="font-bold text-secondary">245 ⭐</span>
                 </div>
               </div>
             </Card>
@@ -82,10 +84,10 @@ export const RewardsSection = () => {
               <h3 className="text-xl font-game font-bold text-primary mb-6 text-center">
                 Your Treasure Collection 💎
               </h3>
-              
+
               <div className="space-y-4">
                 {rewards.map((reward, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="flex items-center justify-between p-4 bg-muted/30 rounded-2xl border-2 border-primary/20 hover:border-primary/40 transition-colors"
                   >
@@ -102,7 +104,7 @@ export const RewardsSection = () => {
                         </div>
                       </div>
                     </div>
-                    
+
                     <div className="text-right">
                       <div className="font-pixel font-bold text-xl text-primary">
                         {reward.amount}
@@ -126,11 +128,13 @@ export const RewardsSection = () => {
                   Come back tomorrow for your daily reward!
                 </div>
                 <div className="flex justify-center gap-2">
-                  {[1,2,3,4,5,6,7].map((day) => (
-                    <div 
+                  {[1, 2, 3, 4, 5, 6, 7].map((day) => (
+                    <div
                       key={day}
                       className={`w-8 h-8 rounded-full border-2 flex items-center justify-center text-xs font-bold ${
-                        day <= 3 ? 'bg-secondary border-secondary-hover text-secondary-foreground' : 'bg-white/20 border-white/40 text-white'
+                        day <= 3
+                          ? "bg-secondary border-secondary-hover text-secondary-foreground"
+                          : "bg-white/20 border-white/40 text-white"
                       }`}
                     >
                       {day}

@@ -19,8 +19,6 @@ Designed with **Tailwind CSS** + **shadcn/ui** for a clean, accessible, and beau
 
 ## 📸 Preview
 
-> (Optional) Add a screenshot or short GIF of your UI here  
-> Example:  
 > ![preview](./public/preview.png)
 
 ---
